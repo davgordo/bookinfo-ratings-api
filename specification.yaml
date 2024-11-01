@@ -25,6 +25,9 @@ paths:
                         type: integer
                     in: path
                     required: true
+                    examples:
+                        product_1:
+                            value: 1
             responses:
                 '200':
                     content:
@@ -32,7 +35,7 @@ paths:
                             schema:
                                 $ref: '#/components/schemas/ProductRatings'
                             examples:
-                                Success:
+                                product_1:
                                     value:
                                         id: 1
                                         ratings:
