@@ -10,7 +10,7 @@ servers:
     -
         url: 'http://localhost:8080'
     -
-        url: 'https://microcks-microcks.apps.cluster-p28j5.p28j5.sandbox1687.opentlc.comrest/ratings/1'
+        url: 'https://microcks-microcks.apps.cluster-p28j5.p28j5.sandbox1687.opentlc.com/rest/ratings/1'
 paths:
     '/ratings/{id}':
         get:
