@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-    title: BookInfo Ratings API
+    title: ratings
     version: '1'
     description: This is the API of the Istio BookInfo Ratings service.
     license:
