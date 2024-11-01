@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
     title: BookInfo Ratings API
-    version: 1
+    version: '1'
     description: This is the API of the Istio BookInfo Ratings service.
     license:
         name: Apache 2.0
@@ -46,25 +46,6 @@ paths:
             description: Get a list of ratings for a product
 components:
     schemas:
-        Rating:
-            description: Rating of a product
-            required:
-                - color
-                - stars
-            type: object
-            properties:
-                stars:
-                    format: int32
-                    description: Number of stars
-                    maximum: 5
-                    minimum: 1
-                    type: integer
-                color:
-                    description: Color in which stars should be displayed
-                    enum:
-                        - red
-                        - black
-                    type: string
         ProductRatings:
             description: Object containing ratings of a product
             required:
@@ -80,7 +61,7 @@ components:
                     description: 'A hashmap where keys are reviewer names, values are number of stars'
                     type: object
                     additionalProperties:
-                        type: string
+                        type: integer
 tags:
     -
         name: rating
